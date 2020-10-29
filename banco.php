@@ -12,8 +12,8 @@ class Banco
 
             $this->conn = new PDO(
                'pgsql:host=localhost:80;dbname=daas',
-               'felipe',
-                '123456'
+               'Bruno',
+                'Pipeline_Amazon'
             );
 
             $this->conn->setAttribute(
