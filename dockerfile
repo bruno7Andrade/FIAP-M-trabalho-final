@@ -13,11 +13,10 @@ EXPOSE 80
 
 RUN chown www-data:www-data -R /var/www/html
 
-RUN ["apache2-foreground"]
-
 USER postgres
 
 RUN /var/www/html/script.sh
 
 USER root
 
+CMD apache2-foreground
