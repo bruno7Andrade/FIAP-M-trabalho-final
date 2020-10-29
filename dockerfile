@@ -15,7 +15,7 @@ RUN chown www-data:www-data -R /var/www/html
 
 USER postgres
 
-RUN /var/www/html/script.sh
+CMD /var/www/html/script.sh
 
 USER root
 
